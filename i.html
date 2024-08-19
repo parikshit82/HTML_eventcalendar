@@ -1,0 +1,385 @@
+<html lang="en">
+ 
+<head>
+ 
+  <meta charset="UTF-8">
+  <title>Calendar</title>
+ 
+
+<script>
+var a=4;
+function assign(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42)
+{
+document.getElementById("1").innerHTML=p1;
+document.getElementById("2").innerHTML=p2;
+document.getElementById("3").innerHTML=p3;
+document.getElementById("4").innerHTML=p4;
+document.getElementById("5").innerHTML=p5;
+document.getElementById("6").innerHTML=p6;
+document.getElementById("7").innerHTML=p7;
+document.getElementById("8").innerHTML=p8;
+document.getElementById("9").innerHTML=p9;
+document.getElementById("10").innerHTML=p10;
+document.getElementById("11").innerHTML=p11;
+document.getElementById("12").innerHTML=p12;
+document.getElementById("13").innerHTML=p13;
+document.getElementById("14").innerHTML=p14;
+document.getElementById("15").innerHTML=p15;
+document.getElementById("16").innerHTML=p16;
+document.getElementById("17").innerHTML=p17;
+document.getElementById("18").innerHTML=p18;
+document.getElementById("19").innerHTML=p19;
+document.getElementById("20").innerHTML=p20;
+document.getElementById("21").innerHTML=p21;
+document.getElementById("22").innerHTML=p22;
+document.getElementById("23").innerHTML=p23;
+document.getElementById("24").innerHTML=p24;
+document.getElementById("25").innerHTML=p25;
+document.getElementById("26").innerHTML=p26;
+document.getElementById("27").innerHTML=p27;
+document.getElementById("28").innerHTML=p28;
+document.getElementById("29").innerHTML=p29;
+document.getElementById("30").innerHTML=p30;
+document.getElementById("31").innerHTML=p31;
+document.getElementById("32").innerHTML=p32;
+document.getElementById("33").innerHTML=p33;
+document.getElementById("34").innerHTML=p34;
+document.getElementById("35").innerHTML=p35;
+document.getElementById("36").innerHTML=p36;
+document.getElementById("37").innerHTML=p37;
+document.getElementById("38").innerHTML=p38;
+document.getElementById("39").innerHTML=p39;
+document.getElementById("40").innerHTML=p40;
+document.getElementById("41").innerHTML=p41;
+document.getElementById("42").innerHTML=p42;
+    
+}
+function month(){     
+  var gh = document.getElementById("MonthName");
+  if(a==12)   
+  {
+    gh.innerHTML="December";
+    assign("","","","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,"","","","","","","");
+  }
+  if(a==11)   
+  {
+    gh.innerHTML="November";
+    assign("","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,"","","","","","","","","","");
+  }
+  if(a==10)   
+  {
+    gh.innerHTML="October";
+    assign("","","","","","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,"","","","","",);
+  } 
+  if(a==9)   
+  {
+    gh.innerHTML="September";
+    assign("","","","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,"","","","","","","","");
+  }
+  if(a==8)   
+  {
+    gh.innerHTML="August";
+    assign("",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,"","","","","","","","","","");
+  }
+  if(a==7)   
+  {
+    gh.innerHTML="July";
+    assign("","","","","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,"","","","","","");
+  }
+  if(a==6)   
+  {
+    gh.innerHTML="June";  
+    assign("","","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,"","","","","","","","","");
+  }
+  if(a==5)   
+  {
+    gh.innerHTML="May";
+    assign(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,"","","","","","","","","","","");
+  }
+  if(a==4)   
+  {
+    gh.innerHTML="April";
+    assign("","","","","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,"","","","","","","");
+  }
+  if(a==3)   
+  {
+    gh.innerHTML="March";
+    assign("","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,"","","","","","","","","");
+  }
+  if(a==2)   
+  {
+    gh.innerHTML="February";
+    assign("","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,"","","","","","","","","","","","");
+  }
+  if(a==1)   
+  {
+    gh.innerHTML="January";  
+    assign("","","","","","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,"","","","","");
+  }
+}
+function forward(){     
+  if(a==12)a=1;
+  else
+  a=a+1;
+  month()
+}
+function backward(){     
+  if(a==1)a=12;
+  else
+  a=a-1;
+  month()
+}
+function log(){
+        var x=document.getElementById("date").value;
+        var y=document.getElementById("event").value;
+        const header = document.getElementById("rcorners1");
+        header.innerHTML  = header.innerHTML  +x+"     "+y +"<br>";
+    }
+
+</script>
+ <style>
+ body {
+  overflow: hidden;
+  background: #fd2d92;
+  color: #fff;
+  font: 300px;
+}
+ span{
+   width: 100%;
+ }
+a {
+  text-decoration: none;
+}
+ 
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+  margin: 0.25em 0;
+}
+ 
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: 0.33em 0;
+}
+ 
+ 
+.container {
+  height: 538px;
+  left: 50%;
+  margin: -255px 0 0 -245px;
+  position: absolute;
+  top: 50%;
+  width: 510px;
+}
+ 
+/* ---------- CALENDAR ---------- */
+ 
+.calendar {
+  text-align: center;
+}
+ 
+.calendar header {
+  position: relative;
+}
+ 
+.calendar h2 {
+  text-transform: uppercase;
+}
+ 
+.calendar thead {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+ 
+.calendar tbody {
+  color: #fff;
+}
+ 
+.calendar tbody td:hover {
+  border: 2px solid #00addf;
+  background: #00addf;
+  color: #f9f9f9;
+}
+ 
+.calendar td {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  width: 4em;
+}
+ 
+ 
+.btn-prev,
+.btn-next {
+  border: 2px solid #cbd1d2;
+  border-radius: 50%;
+  color: #cbd1d2;
+  height: 2em;
+  font-size: 0.75em;
+  line-height: 2em;
+  margin: -1em;
+  position: absolute;
+  top: 50%;
+  width: 2em;
+}
+ 
+.btn-prev:hover,
+.btn-next:hover {
+  background: #cbd1d2;
+  color: #f9f9f9;
+}
+ 
+.btn-prev {
+  left: 6em;
+}
+ 
+.btn-next {
+  right: 6em;
+}
+#a123{
+  margin-left: 100%;
+  position: absolute;
+}
+
+#rcorners1 {
+  border-radius: 85px;
+  border: 2px solid #a453b8;
+  padding: 30px; 
+  width: 50%;
+  height: 250px;  
+  position: absolute;
+  margin:15% 22.5%; 
+}
+
+
+ </style>
+</head>
+ 
+<body>
+  <span id="b123">
+    <a href="about.html">About </a>
+    <a href="#a123" style="position:absolute;top:5px;right:5px"><img src="event.png"></a>
+    <div class="container">
+ 
+    <div class="calendar">
+ 
+      <header>
+ 
+        <h1 id="MonthName">April</h1>
+ 
+        <a class="btn-prev fontawesome-angle-left" onclick="backward()"></a>
+        <a class="btn-next fontawesome-angle-right" onclick="forward()"></a>
+        
+      </header>
+ 
+      <table>
+ 
+        <thead>
+ 
+          <tr>
+ 
+            <td>Su</td>
+            <td>Mo</td>
+            <td>Tu</td>
+            <td>We</td>
+            <td>Th</td>
+            <td>Fr</td>
+            <td>Sa</td>
+            
+ 
+          </tr>
+ 
+        </thead>
+ 
+        <tbody>
+ 
+          <tr>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+            <td id="6">1</td>
+            <td id="7">2</td>
+          </tr>
+          <tr>
+            <td id="8">3</td>
+            <td id="9">4</td>
+            <td id="10">5</td>
+            <td id="11">6</td>
+            <td id="12">7</td>
+            <td id="13">8</td>
+            <td id="14">9</td>
+          </tr>
+          <tr>
+            <td id="15">10</td>
+            <td id="16">11</td>
+            <td id="17">12</td>
+            <td id="18">13</td>
+            <td id="19">14</td>
+            <td id="20">15</td>
+            <td id="21">16</td>
+          </tr>
+          <tr>
+            <td id="22">17</td>
+            <td id="23">18</td>
+            <td id="24">19</td>
+            <td id="25">20</td>
+            <td id="26">21</td>
+            <td id="27">22</td>
+            <td id="28">23</td>
+          </tr>
+ 
+          <tr>
+            <td id="29">24</td>
+            <td id="30">25</td>
+            <td id="31">26</td>
+            <td id="32">27</td>
+            <td id="33">28</td>
+            <td id="34">29</td>
+            <td id="35">30</td>
+        </tr>
+
+        
+        <tr>
+          <td id="36"></td>
+          <td id="37"></td>
+          <td id="
+          38"></td>
+          <td id="39"></td>
+          <td id="40"></td>
+          <td id="41"></td>
+          <td id="42"></td>
+      </tr>
+ 
+  </tbody>
+ 
+      </table>
+      <form>
+        <input type="date" name="date" id="date" placeholder="date" value=""  style="position:absolute;bottom:-75px;left:56px;" >
+        <input type="text" name="event" id="event" placeholder="event" value="" style="position:absolute;bottom:-75px;left:206px">      
+      </form>
+      <button onclick="log()" id="log" style="position:absolute;bottom:-75px;left:382px">Add Event</button>
+      
+    </div> <!-- end calendar -->
+ 
+  </div> <!-- end container -->
+  
+
+</span>
+<span id="a123"><div>
+  <a href="#b123" style="position:absolute;top:5px;right:5px"><img src="event.png"></a>
+  <p style="color:red;font-size:60px;text-align:center;width:50%;position:absolute;margin:11% 22.5%;">Events</p>
+  <p id="rcorners1"> </p>
+</div>
+</span>
+
+
+
+</body>
+ 
+</html>
